@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "imk-gst-cli"
+version = "0.1.0"
+description = "Generic-Shell-Toolbox cli tool for common shell operations, expandable with extensions"
+authors = ["Jonathan Mikler <ionymikler@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.15.1"
+
+[tool.poetry.scripts]
+gst_cli = "imk_gst_cli.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
